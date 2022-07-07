@@ -177,7 +177,7 @@ a {
   }
   &__prices-title {
     font-weight: 600;
-    font-size: 75px;
+    @include adaptiveFont(75, 40);
     line-height: 112px;
     margin-bottom: 123px;
   }
@@ -413,12 +413,12 @@ a {
   }
   &__login-title {
     font-weight: 600;
-    font-size: 54px;
+    @include adaptiveFont(54, 36);
     line-height: 81px;
   }
   &__login-text {
     font-weight: 400;
-    font-size: 24px;
+    @include adaptiveFont(24, 18);
     line-height: 36px;
     margin-bottom: 46px;
   }
@@ -507,11 +507,11 @@ a {
   }
   &__name {
     font-weight: 600;
-    font-size: 50px;
+    @include adaptiveFont(50, 30);
     line-height: 75px;
     &-about {
       font-weight: 400;
-      font-size: 28px;
+      @include adaptiveFont(28, 18);
       line-height: 42px;
       color: #b4b1b1;
       margin-bottom: 66px;
@@ -519,12 +519,12 @@ a {
   }
   &__price {
     font-weight: 700;
-    font-size: 69px;
+    @include adaptiveFont(69, 30);
     line-height: 42px;
     margin-bottom: auto;
     span {
       font-weight: 400;
-      font-size: 26px;
+      @include adaptiveFont(26, 18);
       color: #b4b1b1;
       line-height: 42px;
       span {
@@ -535,19 +535,19 @@ a {
   &__sub {
     font-weight: 700;
     margin-top: auto;
-    font-size: 27px;
+    @include adaptiveFont(27, 17);
     line-height: 40px;
 
     &-about {
       font-weight: 400;
-      font-size: 28px;
+      @include adaptiveFont(28, 18);
       line-height: 42px;
       margin-bottom: 45px;
     }
   }
   &__upgrade {
     font-weight: 400;
-    font-size: 24px;
+    @include adaptiveFont(24, 16);
     line-height: 36px;
     color: #b4b1b1;
     margin-bottom: 53px;
@@ -556,13 +556,13 @@ a {
     list-style: none;
     // margin-bottom: 79px;
     font-weight: 400;
-    font-size: 24px;
+    @include adaptiveFont(24, 16);
     line-height: 36px;
     padding-left: 30px;
     position: relative;
     &-capture {
       font-weight: 600;
-      font-size: 28px;
+      @include adaptiveFont(28, 16);
       line-height: 42px;
       margin-bottom: 28px;
     }
@@ -590,7 +590,7 @@ a {
     max-width: 100%;
     margin-top: auto;
     font-weight: 500;
-    font-size: 27px;
+    @include adaptiveFont(27, 17);
     line-height: 40px;
     border-radius: 30px;
     cursor: pointer;
@@ -599,19 +599,28 @@ a {
 .sourses {
   &__about {
     font-weight: 400;
-    font-size: 30px;
+    @include adaptiveFont(30, 20);
     line-height: 45px;
     margin-bottom: 130px;
   }
+  &__link {
+    cursor: pointer;
+    display: block;
+    display: flex;
+  }
   &__title {
     font-weight: 600;
-    font-size: 120px;
+    @include adaptiveFont(120, 55);
     line-height: 180px;
   }
   &__items {
     display: grid;
-    grid-template-columns: repeat(3, 403px);
+    grid-template-columns:
+      minmax(180px, 400px)
+      minmax(180px, 400px)
+      minmax(180px, 400px);
     gap: 23px;
+    grid-row: auto;
     justify-content: center;
     margin-bottom: 190px;
   }
@@ -668,20 +677,20 @@ a {
   }
   &__top {
     font-weight: 600;
-    font-size: 25px;
+    @include adaptiveFont(25, 16);
     line-height: 38px;
     color: #306ef7;
   }
   &__title {
     font-weight: 600;
-    font-size: 75px;
+    @include adaptiveFont(75, 30);
     max-width: 994px;
     margin: 0 auto;
     line-height: 94px;
   }
   &__bottom {
     font-weight: 400;
-    font-size: 30px;
+    @include adaptiveFont(30, 18);
     max-width: 994px;
     margin: 0 auto;
     line-height: 45px;
@@ -692,7 +701,7 @@ a {
     margin: 0 auto;
     max-width: 1133px;
     font-weight: 400;
-    font-size: 28px;
+    @include adaptiveFont(28, 16);
     line-height: 42px;
     padding-bottom: 56px;
     border-bottom: 1.5px solid #828282;
@@ -711,13 +720,13 @@ a {
   margin-bottom: 190px;
   &__top {
     font-weight: 600;
-    font-size: 25px;
+    @include adaptiveFont(25, 16);
     line-height: 38px;
     color: #306ef7;
   }
   &__title {
     font-weight: 600;
-    font-size: 75px;
+    @include adaptiveFont(75, 30);
     line-height: 112px;
     margin-bottom: 60px;
   }
@@ -729,19 +738,19 @@ a {
     &-name {
       font-weight: 700;
       margin-top: 21px;
-      font-size: 35px;
+      @include adaptiveFont(35, 20);
       line-height: 52px;
     }
     &-about {
       font-weight: 400;
-      font-size: 19px;
+      @include adaptiveFont(19, 15);
       line-height: 28px;
       color: $accent;
       margin-bottom: 21px;
     }
     &-link {
       font-weight: 500;
-      font-size: 20px;
+      @include adaptiveFont(20, 16);
       line-height: 30px;
     }
   }
@@ -750,12 +759,12 @@ a {
   margin-bottom: 83px;
   &__title {
     font-weight: 600;
-    font-size: 75px;
+    @include adaptiveFont(75, 40);
     line-height: 112px;
   }
   &__about {
     font-weight: 400;
-    font-size: 24px;
+    @include adaptiveFont(24, 16);
     line-height: 36px;
     margin-bottom: 75px;
   }
@@ -817,8 +826,10 @@ a {
 }
 .login__links {
   display: flex;
-  max-width: 1520px;
+  max-width: 1560px;
   margin: 0 auto;
+  padding: 0 20px;
+  gap: 20px;
   justify-content: space-between;
   margin-bottom: 69px;
 }
