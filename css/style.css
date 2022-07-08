@@ -599,12 +599,12 @@ a {
 }
 @media (max-width: 767px) {
   .footer__title {
-    font-size: calc( 48px + 88.4 * ((100vw - 320px) / 1920) );
+    font-size: calc( 35px + 110.5 * ((100vw - 320px) / 1920) );
   }
 }
 @media (min-width: 767px) {
   .footer__title {
-    font-size: calc(48px + 52 * (100vw / 1920));
+    font-size: calc(35px + 65 * (100vw / 1920));
   }
 }
 .footer__text {
@@ -614,12 +614,12 @@ a {
 }
 @media (max-width: 767px) {
   .footer__text {
-    font-size: calc( 26px + 28.9 * ((100vw - 320px) / 1920) );
+    font-size: calc( 20px + 39.1 * ((100vw - 320px) / 1920) );
   }
 }
 @media (min-width: 767px) {
   .footer__text {
-    font-size: calc(26px + 17 * (100vw / 1920));
+    font-size: calc(20px + 23 * (100vw / 1920));
   }
 }
 .footer__login-title {
@@ -892,35 +892,71 @@ a {
 }
 .about__top {
   font-weight: 600;
-  font-size: 25px;
   line-height: 38px;
   color: #306ef7;
 }
+@media (max-width: 767px) {
+  .about__top {
+    font-size: calc( 18px + 11.9 * ((100vw - 320px) / 1920) );
+  }
+}
+@media (min-width: 767px) {
+  .about__top {
+    font-size: calc(18px + 7 * (100vw / 1920));
+  }
+}
 .about__title {
   font-weight: 600;
-  font-size: 75px;
   max-width: 994px;
   margin: 0 auto;
   line-height: 94px;
 }
+@media (max-width: 767px) {
+  .about__title {
+    font-size: calc( 30px + 76.5 * ((100vw - 320px) / 1920) );
+  }
+}
+@media (min-width: 767px) {
+  .about__title {
+    font-size: calc(30px + 45 * (100vw / 1920));
+  }
+}
 .about__bottom {
   font-weight: 400;
-  font-size: 30px;
   max-width: 994px;
   margin: 0 auto;
   line-height: 45px;
   margin-bottom: 186px;
+}
+@media (max-width: 767px) {
+  .about__bottom {
+    font-size: calc( 18px + 20.4 * ((100vw - 320px) / 1920) );
+  }
+}
+@media (min-width: 767px) {
+  .about__bottom {
+    font-size: calc(18px + 12 * (100vw / 1920));
+  }
 }
 .about__text {
   text-align: left;
   margin: 0 auto;
   max-width: 1133px;
   font-weight: 400;
-  font-size: 28px;
   line-height: 42px;
   padding-bottom: 56px;
   border-bottom: 1.5px solid #828282;
   margin-bottom: 188px;
+}
+@media (max-width: 767px) {
+  .about__text {
+    font-size: calc( 16px + 20.4 * ((100vw - 320px) / 1920) );
+  }
+}
+@media (min-width: 767px) {
+  .about__text {
+    font-size: calc(16px + 12 * (100vw / 1920));
+  }
 }
 .about__text-author {
   font-weight: 600;
@@ -936,15 +972,33 @@ a {
 }
 .team__top {
   font-weight: 600;
-  font-size: 25px;
   line-height: 38px;
   color: #306ef7;
 }
+@media (max-width: 767px) {
+  .team__top {
+    font-size: calc( 18px + 11.9 * ((100vw - 320px) / 1920) );
+  }
+}
+@media (min-width: 767px) {
+  .team__top {
+    font-size: calc(18px + 7 * (100vw / 1920));
+  }
+}
 .team__title {
   font-weight: 600;
-  font-size: 75px;
   line-height: 112px;
   margin-bottom: 60px;
+}
+@media (max-width: 767px) {
+  .team__title {
+    font-size: calc( 30px + 76.5 * ((100vw - 320px) / 1920) );
+  }
+}
+@media (min-width: 767px) {
+  .team__title {
+    font-size: calc(30px + 45 * (100vw / 1920));
+  }
 }
 .team__profiles {
   display: flex;
@@ -953,20 +1007,47 @@ a {
 .team__profile-name {
   font-weight: 700;
   margin-top: 21px;
-  font-size: 35px;
   line-height: 52px;
+}
+@media (max-width: 767px) {
+  .team__profile-name {
+    font-size: calc( 19px + 27.2 * ((100vw - 320px) / 1920) );
+  }
+}
+@media (min-width: 767px) {
+  .team__profile-name {
+    font-size: calc(19px + 16 * (100vw / 1920));
+  }
 }
 .team__profile-about {
   font-weight: 400;
-  font-size: 19px;
   line-height: 28px;
   color: #707070;
   margin-bottom: 21px;
 }
+@media (max-width: 767px) {
+  .team__profile-about {
+    font-size: calc( 16px + 5.1 * ((100vw - 320px) / 1920) );
+  }
+}
+@media (min-width: 767px) {
+  .team__profile-about {
+    font-size: calc(16px + 3 * (100vw / 1920));
+  }
+}
 .team__profile-link {
   font-weight: 500;
-  font-size: 20px;
   line-height: 30px;
+}
+@media (max-width: 767px) {
+  .team__profile-link {
+    font-size: calc( 17px + 5.1 * ((100vw - 320px) / 1920) );
+  }
+}
+@media (min-width: 767px) {
+  .team__profile-link {
+    font-size: calc(17px + 3 * (100vw / 1920));
+  }
 }
 
 .form {
