@@ -213,7 +213,7 @@ a {
   }
   &__prices-title {
     font-weight: 600;
-    font-size: 75px;
+    @include adaptiveFont(75, 30);
     line-height: 112px;
     margin-bottom: 123px;
   }
@@ -461,12 +461,12 @@ a {
   }
   &__login-title {
     font-weight: 600;
-    font-size: 54px;
+    @include adaptiveFont(54, 30);
     line-height: 81px;
   }
   &__login-text {
     font-weight: 400;
-    font-size: 24px;
+    @include adaptiveFont(24, 17);
     line-height: 36px;
     margin-bottom: 46px;
   }
@@ -537,6 +537,7 @@ a {
     transition: all 0.3s;
     height: 989px;
     max-width: 496px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -555,11 +556,11 @@ a {
   }
   &__name {
     font-weight: 600;
-    font-size: 50px;
+    @include adaptiveFont(50, 30);
     line-height: 75px;
     &-about {
       font-weight: 400;
-      font-size: 28px;
+      @include adaptiveFont(28, 18);
       line-height: 42px;
       color: #b4b1b1;
       margin-bottom: 66px;
@@ -567,12 +568,12 @@ a {
   }
   &__price {
     font-weight: 700;
-    font-size: 69px;
+    @include adaptiveFont(69, 29);
     line-height: 42px;
     margin-bottom: auto;
     span {
       font-weight: 400;
-      font-size: 26px;
+      @include adaptiveFont(26, 17);
       color: #b4b1b1;
       line-height: 42px;
       span {
@@ -583,34 +584,33 @@ a {
   &__sub {
     font-weight: 700;
     margin-top: auto;
-    font-size: 27px;
+    @include adaptiveFont(27, 17);
     line-height: 40px;
 
     &-about {
       font-weight: 400;
-      font-size: 28px;
+      @include adaptiveFont(28, 18);
       line-height: 42px;
       margin-bottom: 45px;
     }
   }
   &__upgrade {
     font-weight: 400;
-    font-size: 24px;
+    @include adaptiveFont(24, 15);
     line-height: 36px;
     color: #b4b1b1;
     margin-bottom: 53px;
   }
   &__features {
     list-style: none;
-    // margin-bottom: 79px;
     font-weight: 400;
-    font-size: 24px;
+    @include adaptiveFont(24, 16);
     line-height: 36px;
     padding-left: 30px;
     position: relative;
     &-capture {
       font-weight: 600;
-      font-size: 28px;
+      @include adaptiveFont(28, 16);
       line-height: 42px;
       margin-bottom: 28px;
     }
@@ -638,7 +638,7 @@ a {
     max-width: 100%;
     margin-top: auto;
     font-weight: 500;
-    font-size: 27px;
+    @include adaptiveFont(27, 17);
     line-height: 40px;
     border-radius: 30px;
     cursor: pointer;
@@ -647,18 +647,21 @@ a {
 .sourses {
   &__about {
     font-weight: 400;
-    font-size: 30px;
+    @include adaptiveFont(30, 18);
     line-height: 45px;
     margin-bottom: 130px;
   }
   &__title {
     font-weight: 600;
-    font-size: 120px;
+    @include adaptiveFont(120, 50);
     line-height: 180px;
   }
   &__items {
     display: grid;
-    grid-template-columns: repeat(3, 403px);
+    grid-template-columns:
+      minmax(100px, 403px)
+      minmax(100px, 403px)
+      minmax(100px, 403px);
     gap: 23px;
     justify-content: center;
     margin-bottom: 190px;
@@ -670,22 +673,29 @@ a {
     display: flex;
     position: relative;
     flex-direction: column;
+    transition: all 0.3s;
     max-width: 403px;
     text-align: left;
     padding: 36px 33px 17px 28px;
+    &:hover {
+      background-color: #4681e7;
+      p {
+        color: #000;
+      }
+    }
     &-img {
       max-width: 50px;
       margin-bottom: 17px;
     }
     &-title {
       font-weight: 600;
-      font-size: 30px;
+      @include adaptiveFont(30, 20);
       line-height: 45px;
       margin-bottom: 11px;
     }
     &-text {
       font-weight: 400;
-      font-size: 23px;
+      @include adaptiveFont(23, 17);
       line-height: 34px;
       color: #828282;
     }
@@ -694,7 +704,7 @@ a {
 .soon::after {
   content: "Coming Soon";
   font-weight: 400;
-  font-size: 16px;
+  @include adaptiveFont(16, 13);
   line-height: 24px;
   color: #4a7de3;
   position: absolute;
@@ -759,13 +769,13 @@ a {
   margin-bottom: 190px;
   &__top {
     font-weight: 600;
-    @include adaptiveFont (25,18);
+    @include adaptiveFont(25, 18);
     line-height: 38px;
     color: #306ef7;
   }
   &__title {
     font-weight: 600;
-   @include adaptiveFont (75,30);
+    @include adaptiveFont(75, 30);
     line-height: 112px;
     margin-bottom: 60px;
   }
@@ -777,19 +787,19 @@ a {
     &-name {
       font-weight: 700;
       margin-top: 21px;
-      @include adaptiveFont (35,19);
+      @include adaptiveFont(35, 19);
       line-height: 52px;
     }
     &-about {
       font-weight: 400;
-      @include adaptiveFont (19,16);
+      @include adaptiveFont(19, 16);
       line-height: 28px;
       color: $accent;
       margin-bottom: 21px;
     }
     &-link {
       font-weight: 500;
-      @include adaptiveFont (20,17);
+      @include adaptiveFont(20, 17);
       line-height: 30px;
     }
   }
@@ -798,18 +808,18 @@ a {
   margin-bottom: 83px;
   &__title {
     font-weight: 600;
-    font-size: 75px;
+    @include adaptiveFont(75, 30);
     line-height: 112px;
   }
   &__about {
     font-weight: 400;
-    font-size: 24px;
+    @include adaptiveFont(24, 17);
     line-height: 36px;
     margin-bottom: 75px;
   }
   &__inner {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     max-width: 1188px;
     margin: 0 auto;
@@ -824,7 +834,7 @@ a {
       border: none;
       border-bottom: 1px solid #fff;
       font-weight: 400;
-      font-size: 23px;
+      @include adaptiveFont(23, 17);
       min-height: 85px;
       color: #fff;
       position: relative;
@@ -839,7 +849,7 @@ a {
     background-color: #326cf9;
     max-width: 487px;
     font-weight: 400;
-    font-size: 26px;
+    @include adaptiveFont(26, 19);
     line-height: 39px;
     color: #fff;
     cursor: pointer;
@@ -869,12 +879,13 @@ a {
   margin: 0 auto;
   justify-content: space-between;
   margin-bottom: 69px;
+  gap: 20px;
 }
 .login__link {
   display: flex;
   justify-content: center;
   gap: 20px;
-  font-size: 21px;
+  @include adaptiveFont(21, 16);
   line-height: 32px;
   align-items: center;
   max-width: 454px;
