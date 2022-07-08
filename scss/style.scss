@@ -450,12 +450,12 @@ a {
   }
   &__title {
     font-weight: 700;
-    @include adaptiveFont(100, 48);
+    @include adaptiveFont(100, 35);
     line-height: 150px;
   }
   &__text {
     font-weight: 400;
-    @include adaptiveFont(43, 26);
+    @include adaptiveFont(43, 20);
     line-height: 64px;
     margin-bottom: 14px;
   }
@@ -716,20 +716,20 @@ a {
   }
   &__top {
     font-weight: 600;
-    font-size: 25px;
+    @include adaptiveFont(25, 18);
     line-height: 38px;
     color: #306ef7;
   }
   &__title {
     font-weight: 600;
-    font-size: 75px;
+    @include adaptiveFont(75, 30);
     max-width: 994px;
     margin: 0 auto;
     line-height: 94px;
   }
   &__bottom {
     font-weight: 400;
-    font-size: 30px;
+    @include adaptiveFont(30, 18);
     max-width: 994px;
     margin: 0 auto;
     line-height: 45px;
@@ -740,7 +740,7 @@ a {
     margin: 0 auto;
     max-width: 1133px;
     font-weight: 400;
-    font-size: 28px;
+    @include adaptiveFont(28, 16);
     line-height: 42px;
     padding-bottom: 56px;
     border-bottom: 1.5px solid #828282;
@@ -759,13 +759,13 @@ a {
   margin-bottom: 190px;
   &__top {
     font-weight: 600;
-    font-size: 25px;
+    @include adaptiveFont (25,18);
     line-height: 38px;
     color: #306ef7;
   }
   &__title {
     font-weight: 600;
-    font-size: 75px;
+   @include adaptiveFont (75,30);
     line-height: 112px;
     margin-bottom: 60px;
   }
@@ -777,19 +777,19 @@ a {
     &-name {
       font-weight: 700;
       margin-top: 21px;
-      font-size: 35px;
+      @include adaptiveFont (35,19);
       line-height: 52px;
     }
     &-about {
       font-weight: 400;
-      font-size: 19px;
+      @include adaptiveFont (19,16);
       line-height: 28px;
       color: $accent;
       margin-bottom: 21px;
     }
     &-link {
       font-weight: 500;
-      font-size: 20px;
+      @include adaptiveFont (20,17);
       line-height: 30px;
     }
   }
