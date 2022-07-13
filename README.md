@@ -1,1 +1,1 @@
-# MARICO add response to the main page
+https://granatov.github.io/MARICO/
