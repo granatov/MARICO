@@ -11,7 +11,7 @@ brg.addEventListener("click", function (event) {
 });
 
 function show_hide_password(target) {
-  let input = document.getElementById("password_input");
+  let input = document.querySelector('.form__password')
   if (input.getAttribute("type") == "password") {
     target.classList.add("view");
     input.setAttribute("type", "text");
