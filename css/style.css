@@ -159,11 +159,14 @@ a {
 .menu__list .menu__item:first-child {
   margin-right: -10px;
 }
-.menu__list .menu__item:first-child img {
+.menu__list .menu__item:first-child svg {
   margin-bottom: 2px;
 }
 .menu__list .menu__item:hover {
   color: #3c82f4;
+}
+.menu__list .menu__item:hover svg path {
+  fill: #3c82f4;
 }
 .menu__list.active {
   transform: translateY(0);
@@ -978,6 +981,7 @@ a {
   border: 1px solid #707070;
   border-radius: 7px;
   display: flex;
+  height: 100%;
   position: relative;
   flex-direction: column;
   transition: all 0.3s;
@@ -1320,10 +1324,22 @@ a {
   background-repeat: no-repeat;
   background-position: right;
 }
-.form__password {
-  background-image: url(../images/Eye.svg);
-  background-repeat: no-repeat;
-  background-position: right;
+.form .password__wrapper {
+  max-width: 487px;
+  width: 100%;
+  position: relative;
+}
+.form .password__control {
+  position: absolute;
+  top: 30%;
+  right: 0;
+  display: inline-block;
+  width: 34px;
+  height: 25px;
+  background: url(../images/close__eye.svg) 0 0 no-repeat;
+}
+.form .password__control.view {
+  background: url(../images/eye.svg) 0 0 no-repeat;
 }
 
 .login__links {

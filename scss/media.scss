@@ -499,6 +499,12 @@
     padding: 10px;
     justify-content: left;
   }
+  .main__info {
+    margin-bottom: 50px;
+  }
+  .sourses__items {
+    margin-bottom: 35px;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -519,9 +525,7 @@
   .main__info-item .item__text {
     line-height: 20px;
   }
-  .main__info {
-    margin-bottom: 50px;
-  }
+
   .step .block__title {
     line-height: 46px;
     margin-top: 5px;
@@ -556,9 +560,7 @@
     line-height: 40px;
     margin-bottom: 20px;
   }
-  .sourses__items {
-    margin-bottom: 35px;
-  }
+
   .sourses__item-title {
     line-height: 21px;
     font-size: 14px;
