@@ -261,7 +261,7 @@
   }
 
   .numbers__inner .numbers__text {
-    line-height: 44px;
+    line-height: 43px;
   }
 
   .footer {
@@ -469,6 +469,10 @@
     padding: 10px;
     justify-content: left;
   }
+
+  .main__info {
+    margin-bottom: 50px;
+  }
 }
 @media screen and (max-width: 400px) {
   .header__top {
@@ -491,10 +495,6 @@
 
   .main__info-item .item__text {
     line-height: 20px;
-  }
-
-  .main__info {
-    margin-bottom: 50px;
   }
 
   .step .block__title {
