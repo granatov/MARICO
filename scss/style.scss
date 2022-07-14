@@ -142,12 +142,16 @@ a {
       transition: all 0.3s;
       &:first-child {
         margin-right: -10px;
-        img {
+        svg {
           margin-bottom: 2px;
         }
       }
+
       &:hover {
         color: #3c82f4;
+        svg path {
+          fill: #3c82f4;
+        }
       }
     }
   }
@@ -868,11 +872,25 @@ a {
     background-repeat: no-repeat;
     background-position: right;
   }
-  &__password {
-    background-image: url(../images/Eye.svg);
-    background-repeat: no-repeat;
-    background-position: right;
+  .password__wrapper {
+    max-width: 487px;
+    width: 100%;
+    position: relative;
   }
+  .password__control {
+    position: absolute;
+    top: 30%;
+    right: 0;
+    display: inline-block;
+    width: 34px;
+    height: 25px;
+    background: url(../images/close__eye.svg) 0 0 no-repeat;
+  }
+  .password__control.view {
+
+    background: url(../images/eye.svg) 0 0 no-repeat;
+  }
+
 }
 .login__links {
   display: flex;

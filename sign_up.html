@@ -64,11 +64,19 @@
               type="email"
               placeholder="Email Address"
             />
-            <input
-              class="form__password"
-              type="password"
-              placeholder="Password"
-            />
+            <div class="password__wrapper">
+              <input
+                class="form__password"
+                type="password"
+                placeholder="Password"
+                id="password_input"
+              />
+              <a
+                href="#"
+                class="password__control"
+                onclick="return show_hide_password(this);"
+              ></a>
+            </div>
             <button class="form__btn" type="submit">Sign Up</button>
           </form>
         </div>

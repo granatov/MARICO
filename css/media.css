@@ -473,6 +473,10 @@
   .main__info {
     margin-bottom: 50px;
   }
+
+  .sourses__items {
+    margin-bottom: 35px;
+  }
 }
 @media screen and (max-width: 400px) {
   .header__top {
@@ -530,10 +534,6 @@
   .main__prices-title {
     line-height: 40px;
     margin-bottom: 20px;
-  }
-
-  .sourses__items {
-    margin-bottom: 35px;
   }
 
   .sourses__item-title {
