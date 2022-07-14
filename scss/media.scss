@@ -1,30 +1,10 @@
 @import "vars";
-@media screen and (max-width: 1578px) {
-  .main__prices-title {
-    line-height: 62px;
-  }
+@media screen and (max-width: 1565px) {
   .tarifs {
     &__items {
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
       gap: 20px;
-    }
-    &__item {
-      width: 100%;
-      max-width: 800px;
-    }
-  }
-}
-@media screen and (max-width: 1440px) {
-  .tarifs {
-    &__name {
-      &-about {
-        margin-bottom: 30px;
-      }
-    }
-    &__price {
-      margin-bottom: 0;
+      align-items: center;
     }
   }
 }
@@ -57,29 +37,7 @@
     }
   }
 }
-
-@media screen and (max-width: 1060px) {
-  .form__inner {
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-@media screen and (max-width: 1030px) {
-  .login__links {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .login__link {
-    justify-content: left;
-    gap: 20px;
-    font-size: 16px;
-    align-items: center;
-    padding: 10px;
-  }
-}
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1011px) {
   .step {
     &__blocks {
       flex-direction: column;
@@ -93,6 +51,14 @@
   }
   .step__block .right_block {
     margin-bottom: 0;
+  }
+  .main__prices-title {
+    line-height: 59px;
+  }
+
+  .login__links {
+    align-items: center;
+    flex-direction: column;
   }
 }
 
@@ -196,65 +162,91 @@
     &__nav {
       justify-content: center;
     }
-  }
-  .sourses {
-    &__item {
-      padding: 15px;
-      &-title {
-        font-size: 20px;
-        line-height: 35px;
-      }
-      &-text {
-        font-size: 17px;
-        line-height: 20px;
-      }
-      &-img {
-        margin-bottom: 10px;
-      }
-    }
-    &__about {
-      margin-bottom: 45px;
+    .menu {
+      display: none;
     }
   }
-  .soon::after {
-    font-size: 12px;
-    line-height: 17px;
-    width: 95px;
-    height: 28px;
+
+  .about {
+    &__img {
+      margin-bottom: 5px;
+      width: 30%;
+    }
+    &__title {
+      line-height: 59px;
+      margin-bottom: 15px;
+    }
+    &__bottom {
+      line-height: 30px;
+      margin-bottom: 80px;
+    }
+    &__text {
+      line-height: 25px;
+      padding-bottom: 15px;
+      margin-bottom: 60px;
+      p + p {
+        margin-top: 15px;
+      }
+    }
   }
-}
-@media screen and (max-width: 660px) {
-  .sourses {
+  .tarifs {
+    &__btn {
+      padding: 10px 0;
+    }
     &__items {
-      grid-template-columns:
-        minmax(100px, 400px)
-        minmax(100px, 400px)
-        minmax(100px, 400px);
-      gap: 10px;
+      margin-bottom: 50px;
     }
-    &__item {
-      padding: 10px;
-      align-items: center;
-      &-title {
-        font-size: 18px;
-        line-height: 18px;
+    &__name {
+      line-height: 42px;
+      &-about {
+        margin-bottom: 20px;
+      }
+    }
+    &__price {
+      margin-bottom: 20px;
+    }
+    &__sub {
+      margin-top: 0;
+      &-about {
         margin-bottom: 0;
       }
-      &-text {
-        display: none;
-      }
-      &-img {
+    }
+    &__upgrade {
+      margin-bottom: 15px;
+    }
+    &__item {
+      height: auto;
+    }
+    &__features {
+      margin-bottom: 20px;
+      &-capture {
         margin-bottom: 10px;
       }
     }
+  }
+  .sourses {
     &__about {
-      margin-bottom: 45px;
+      margin-bottom: 60px;
+    }
+    &__items {
+      gap: 15px;
+    }
+    &__item {
+      padding: 17px;
+      &-text {
+        line-height: 24px;
+      }
+      &-title {
+        line-height: 30px;
+      }
     }
   }
   .soon::after {
-    display: none;
+    width: 105px;
+    height: 31px;
   }
 }
+
 @media screen and (max-width: 768px) {
   .header {
     &__content {
@@ -289,7 +281,7 @@
   }
   .numbers__inner {
     .numbers__text {
-      line-height: 44px;
+      line-height: 43px;
     }
   }
   .footer {
@@ -302,42 +294,66 @@
       width: 70%;
     }
   }
-  .tarifs {
-    &__item {
-      height: auto;
+  .sourses {
+    &__about {
+      line-height: 25px;
     }
-    &__name {
-      &-about {
-        margin-bottom: 30px;
-      }
-    }
-    &__price {
-      margin-bottom: 0;
-    }
-    &__sub {
-      margin-top: 15px;
-      &-about {
-        margin-bottom: 5px;
-      }
-    }
-    &__upgrade {
-      margin-bottom: 21px;
-    }
-    &__btn {
-      margin-top: 20px;
+    &__title {
+      line-height: 60px;
+      margin-bottom: 20px;
     }
   }
   .sourses {
-    &__title {
-      line-height: 65px;
-      margin-bottom: 20px;
+    &__item {
+      &-text {
+        display: none;
+      }
     }
+  }
+  .form {
+    margin-bottom: 40px;
     &__about {
-      line-height: 30px;
+      margin-bottom: 30px;
     }
-    &__items {
-      margin-bottom: 40px;
+    &__title {
+      line-height: 80px;
     }
+    &__inner {
+      input {
+        min-height: 44px;
+      }
+    }
+    &__btn {
+      width: 40%;
+      padding: 16px;
+      line-height: 20px;
+    }
+  }
+  .login__links {
+    margin-bottom: 30px;
+  }
+  .login__link {
+    max-width: 300px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .soon::after {
+    display: none;
+  }
+  .sourses__item {
+    align-items: center;
+    padding: 10px;
+    &-title {
+      line-height: 24px;
+      font-size: 18px;
+      margin-bottom: 0;
+    }
+    &-img {
+      margin-bottom: 10px;
+    }
+  }
+  .sourses__items {
+    gap: 5px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -441,60 +457,47 @@
   }
   .about {
     &__img {
-      margin-bottom: 10px;
+      margin-bottom: 0;
+      width: 70%;
     }
     &__title {
-      line-height: 50px;
-      margin-bottom: 20px;
+      line-height: 32px;
     }
     &__bottom {
+      line-height: 22px;
       margin-bottom: 30px;
-      line-height: 30px;
     }
     &__text {
-      line-height: 26px;
-      margin-bottom: 50px;
+      line-height: 19px;
+      margin-bottom: 40px;
+      p + p {
+        margin-top: 10px;
+      }
+    }
+  }
+  .team__profiles {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .team__profile {
+    &-name {
+      margin-top: 0;
+      line-height: 33px;
+    }
+    &-about {
+      margin-bottom: 0;
     }
   }
   .team {
     margin-bottom: 50px;
-    &__title {
-      line-height: 40px;
-      margin-bottom: 30px;
-    }
-    &__profiles {
-      justify-content: start;
-      flex-direction: column;
-      gap: 20px;
-    }
-    &__profile {
-      &-name {
-        margin-top: 10px;
-        line-height: 30px;
-      }
-      &-about {
-        margin-bottom: 10px;
-      }
-    }
   }
-  .tarifs {
-    &__btn {
-      padding: 10px 0;
-      border-radius: 10px;
-    }
-    &__items {
-      margin-bottom: 40px;
-    }
-    &__item {
-      padding: 10px;
-      border-radius: 10px;
-    }
-    &__name {
-      line-height: 40px;
-    }
+  .team__title {
+    line-height: 31px;
+    margin-bottom: 23px;
   }
-  .main__prices-title {
-    margin-bottom: 20px;
+  .login__link {
+    padding: 10px;
+    justify-content: left;
   }
 }
 
@@ -535,45 +538,45 @@
       margin-bottom: 20px;
     }
     &__text {
-      line-height: 34px;
+      line-height: 26px;
+    }
+    &__link {
+      line-height: 28px;
     }
   }
-  .about__img {
-    width: 60%;
-  }
-  .sourses {
+  .tarifs {
     &__item {
-      &-title {
-        font-size: 12px;
-      }
-      &-img {
-        margin-bottom: 6px;
-        width: 60%;
-      }
+      padding: 14px;
     }
-    &__items {
-      grid-template-columns:
-        minmax(80px, 400px)
-        minmax(80px, 400px)
-        minmax(80px, 400px);
+    &__btn {
+      border-radius: 22px;
     }
   }
-  .form {
-    margin-bottom: 30px;
-    &__about {
-      margin-bottom: 20px;
-    }
+  .main__prices-title {
+    line-height: 40px;
+    margin-bottom: 20px;
   }
-  .form__inner input {
-    font-size: 21px;
-    min-height: 55px;
+  .sourses__items {
+    margin-bottom: 35px;
   }
-  .form__btn {
-    padding: 11px;
-    font-size: 22px;
-    line-height: 28px;
+  .sourses__item-title {
+    line-height: 21px;
+    font-size: 14px;
+  }
+  .sourses__title {
+    line-height: 50px;
+    margin-bottom: 16px;
+  }
+  .footer__login-title {
+    line-height: 37px;
   }
   .footer__login-text {
     margin-bottom: 10px;
+  }
+  .form__title {
+    line-height: 40px;
+  }
+  .footer__bottom-link {
+    font-size: 13px;
   }
 }
