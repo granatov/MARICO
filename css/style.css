@@ -25,6 +25,10 @@ a {
   margin: 0 auto;
 }
 
+body.active {
+  overflow-y: hidden;
+}
+
 .header {
   padding-top: 46px;
   font-weight: 500;

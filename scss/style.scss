@@ -21,6 +21,9 @@ a {
   padding: 0 20px;
   margin: 0 auto;
 }
+body.active {
+  overflow-y: hidden;
+}
 
 .header {
   padding-top: 46px;
@@ -887,10 +890,8 @@ a {
     background: url(../images/close__eye.svg) 0 0 no-repeat;
   }
   .password__control.view {
-
     background: url(../images/eye.svg) 0 0 no-repeat;
   }
-
 }
 .login__links {
   display: flex;
