@@ -85,12 +85,12 @@ body.active {
 }
 @media (max-width: 767px) {
   .header__content .content__title {
-    font-size: calc( 56px + 95.2 * ((100vw - 320px) / 1920) );
+    font-size: calc( 52px + 102 * ((100vw - 320px) / 1920) );
   }
 }
 @media (min-width: 767px) {
   .header__content .content__title {
-    font-size: calc(56px + 56 * (100vw / 1920));
+    font-size: calc(52px + 60 * (100vw / 1920));
   }
 }
 .header__content .content__title span {

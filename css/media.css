@@ -354,7 +354,7 @@
 }
 @media screen and (max-width: 500px) {
   .header__content .content__title {
-    line-height: 67px;
+    line-height: 61px;
   }
   .header .content__text_top {
     line-height: 35px;
@@ -378,7 +378,7 @@
     position: absolute;
     justify-content: space-between;
     width: 100%;
-    transform: translateY(1000%);
+    transform: translateY(1100%);
   }
 
   .step__content-list {

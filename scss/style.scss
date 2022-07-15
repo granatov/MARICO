@@ -75,7 +75,7 @@ body.active {
     .content__title {
       font-weight: 700;
       // font-size: 112px;
-      @include adaptiveFont(112, 56);
+      @include adaptiveFont(112, 52);
       line-height: 130px;
       color: #fff;
       margin-bottom: 136px;
@@ -161,6 +161,7 @@ body.active {
   &__list.active {
     transform: translateY(0);
     height: 100vh;
+
     gap: 60px;
     justify-content: flex-start;
   }
