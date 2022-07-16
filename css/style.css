@@ -1381,3 +1381,40 @@ body.active {
 .login__link:hover {
   background-color: #326cf9;
 }
+
+.modal {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  display: none;
+  top: 0;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal__content {
+  background-color: grey;
+  margin: 15% auto;
+  padding: 20px;
+  opacity: 1;
+  width: 80%;
+  border: 1px solid #fff;
+  z-index: 9999;
+}
+.modal__close-window {
+  color: #fff;
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: bold;
+}
+.modal__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.modal__title {
+  font-size: 25px;
+  font-weight: bold;
+}

@@ -14,3 +14,6 @@ $maxWidth: 1920;
     font-size: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
   }
 }
+
+
+
