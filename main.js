@@ -46,3 +46,14 @@ window.onclick = function (event) {
     }
   }
 };
+
+let payBtn = document.querySelector(".modal__btn");
+
+for (let i = 0; i < payBtn.length; i++) {
+  let name = payBtn[i].getAttribute("modal-apply");
+
+  let modal = document.querySelector(
+    '[data-modal-window-apply = "' + name + '"]'
+  );
+  modal.style.display = "block";
+}

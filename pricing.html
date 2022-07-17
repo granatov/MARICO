@@ -112,22 +112,37 @@
           </div>
         </section>
       </div>
-      <div class="modal" data-modal-window="modal_2">
+      <!-- <div class="modal" data-modal-window="modal_2">
         <div class="modal__content">
           <div class="modal__inner">
-            <div class="modal__title">MODAL WINDOW 14</div>
+            <div class="modal__title">Choose payment method</div>
             <div class="modal__close-window">&times;</div>
           </div>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque animi architecto facere error distinctio odit ratione aliquid veniam dolore id!</p>
         </div>
-      </div>
+      </div> -->
        <div class="modal" data-modal-window="modal_3">
         <div class="modal__content">
           <div class="modal__inner">
-            <div class="modal__title">MODAL WINDOW 14</div>
+            <div class="modal__title">Payment details</div>
             <div class="modal__close-window">&times;</div>
           </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque animi architecto facere error distinctio odit ratione aliquid veniam dolore id!</p>
+         <form action="" class="modal__form">
+          <input type="text" class="modal__input" placeholder="CARDHOLER NAME">
+          <input type="text" name="card_number" class="modal__input" placeholder="CARD NUMBER">
+          <input type="month" name="" class="modal__input short" id="" value="2022-01">
+          <input type="text" class="modal__input short" name="" placeholder="CVV" id="">
+<button type="submit" class="modal__btn" data-modal-apply="modal-apply">pay 29$</button>
+         </form>
+        </div>
+      </div>
+      <div class="modal__apply" data-modal-window-apply="modal-apply">
+        <div class="modal__apply-content">
+          <div class="modal__apply-inner">
+            <div class="modal__apply-title">Payment succsess</div>
+          </div>
+          <img class="modal__apply-img" src="images/Check_green_icon.png" alt="">
+            <button class="modal__apply-close-window">OK</button>
         </div>
       </div>
     </main>

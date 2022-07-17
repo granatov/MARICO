@@ -931,12 +931,13 @@ body.active {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   &__content {
-    background-color: grey;
+    background-color: #000;
     margin: 15% auto;
     padding: 20px;
     opacity: 1;
-    width: 80%;
+    width: 40%;
     border: 1px solid #fff;
+    border-radius: 15px;
     z-index: 9999;
   }
   &__close-window {
@@ -954,5 +955,93 @@ body.active {
   &__title {
     font-size: 25px;
     font-weight: bold;
+  }
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    // justify-content: space-between;
+  }
+  &__input {
+    padding: 7px;
+    max-width: 200px;
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    &::placeholder {
+      color: #fff;
+      text-transform: uppercase;
+    }
+    &.short {
+      max-width: 121px;
+    }
+  }
+  &__btn {
+    background-color: transparent;
+    color: #fff;
+    padding: 5px;
+    line-height: 28px;
+    font-size: 20px;
+    border: 1px solid #fff;
+    margin-left: auto;
+    margin-right: 20px;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    &:hover {
+      background-color: #3c82f4;
+    }
+  }
+}
+
+.modal__apply {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  display: none;
+  top: 0;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  &-content {
+    background-color: #000;
+    margin: 15% auto;
+    padding: 20px;
+    opacity: 1;
+    width: 300px;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  &-title {
+    font-size: 26px;
+  }
+  &-img {
+    height: auto;
+    transform: rotate(7deg);
+    width: 200px;
+  }
+  &-close-window {
+    background-color: transparent;
+    color: #fff;
+    padding: 5px;
+    font-size: 20px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    transition: all 0.3s;
+    font-family: "Poppins", sans-serif;
+    line-height: 20px;
+    &:hover {
+      background-color: #3d82f2;
+    }
   }
 }
