@@ -1,9 +1,9 @@
 "use strict";
 
-let brg = document.querySelector(".menu__brg");
-let menuList = document.querySelector(".menu__list");
-let loginLinks = document.querySelector(".login__info");
-let body = document.querySelector("body");
+const brg = document.querySelector(".menu__brg");
+const menuList = document.querySelector(".menu__list");
+const loginLinks = document.querySelector(".login__info");
+const body = document.querySelector("body");
 
 brg.addEventListener("click", function (event) {
   brg.classList.toggle("active");
@@ -13,7 +13,7 @@ brg.addEventListener("click", function (event) {
 });
 
 function show_hide_password(target) {
-  let input = document.querySelector(".form__password");
+  const input = document.querySelector(".form__password");
   if (input.getAttribute("type") == "password") {
     target.classList.add("view");
     input.setAttribute("type", "text");
@@ -28,10 +28,10 @@ let btns = document.querySelectorAll("*[data-modal-btn]");
 
 for (let i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function () {
-    let name = btns[i].getAttribute("data-modal-btn");
-    let modal = document.querySelector("[data-modal-window = '" + name + "']");
+    const name = btns[i].getAttribute("data-modal-btn");
+    const modal = document.querySelector("[data-modal-window = '" + name + "']");
     modal.style.display = "block";
-    let close = modal.querySelector(".modal__close-window");
+    const close = modal.querySelector(".modal__close-window");
     close.addEventListener("click", function () {
       modal.style.display = "none";
     });
@@ -40,7 +40,7 @@ for (let i = 0; i < btns.length; i++) {
 
 window.onclick = function (event) {
   if (event.target.hasAttribute("data-modal-window")) {
-    let modals = document.querySelectorAll("*[data-modal-window]");
+    const modals = document.querySelectorAll("*[data-modal-window]");
     for (let i = 0; i < modals.length; i++) {
       modals[i].style.display = "none";
     }
@@ -50,10 +50,12 @@ window.onclick = function (event) {
 let payBtn = document.querySelector(".modal__btn");
 
 for (let i = 0; i < payBtn.length; i++) {
-  let name = payBtn[i].getAttribute("modal-apply");
+  const name = payBtn[i].getAttribute("modal-apply");
 
-  let modal = document.querySelector(
+  const modal = document.querySelector(
     '[data-modal-window-apply = "' + name + '"]'
   );
   modal.style.display = "block";
 }
+
+
